@@ -15,36 +15,28 @@
     </head>
     <body>
         
-        <header>
-            <h1>TIC TAC TOE</h1>
-
-            <!-- Game Instructions -->
-            <p>Game starts with the first player clicking on any of the boxes below.</p>
-            <p>First Player is X and Second Player is O</p>
-
-        </header>
-
-        <main>
-            <div class="board" id="board">
-                <!-- 3x3 game board -->
-                <div class="cell" data-cell></div>
-                <div class="cell" data-cell></div>
-                <div class="cell" data-cell></div>
-                <div class="cell" data-cell></div>
-                <div class="cell" data-cell></div>
-                <div class="cell" data-cell></div>
-                <div class="cell" data-cell></div>
-                <div class="cell" data-cell></div>
-                <div class="cell" data-cell></div>
+        <section>
+            <!-- Title of Webpage and Game Board-->
+            <h1 class="game-title">Tic Tac Toe</h1>
+            <div class="alert alert-success" role="alert" id="win-alert"></div>
+            <div class="alert alert-warning" role="alert" id="draw-alert"></div>
+            <div class="game-container">
+                <div data-cell-index="0" class="cell"></div>
+                <div data-cell-index="1" class="cell"></div>
+                <div data-cell-index="2" class="cell"></div>
+                <div data-cell-index="3" class="cell"></div>
+                <div data-cell-index="4" class="cell"></div>
+                <div data-cell-index="5" class="cell"></div>
+                <div data-cell-index="6" class="cell"></div>
+                <div data-cell-index="7" class="cell"></div>
+                <div data-cell-index="8" class="cell"></div>
             </div>
 
-            <!-- Winning message and button to reset game-->
-            <div class="winning-message" id="winningMessage">
-                <div id="winningMessageText"></div>
-                <button id="resetBtn">Reset</button>
-            </div>
-            
-        </main>
+            <!-- Header that provides the game's status -->
+            <h2 class="game-status"></h2>
+            <!-- Restart Button -->
+            <button class="game-restart">Restart Game</button>
+        </section>
 
         <!-- jQuery, Popper, and Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
